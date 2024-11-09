@@ -18,9 +18,9 @@ jobs:
       fail-fast: false
       matrix:
         include:
-          - arch: aarch64_cortex-a53
-            sdk_url_path: https://downloads.openwrt.org/snapshots/targets/aarch64_cortex-a53/generic
-            sdk_name: -sdk-aarch64_cortex-a53_
+          - arch: mediatek-filogic
+            sdk_url_path: https://downloads.openwrt.org/releases/23.05.1/targets/mediatek/filogic
+            sdk_name: openwrt-sdk-23.05.1-mediatek-filogic_gcc-12.3.0_musl.Linux-x86_64
 
     env:
       SDK_URL_PATH: ${{ matrix.sdk_url_path }}
